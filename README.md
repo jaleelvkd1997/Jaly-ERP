@@ -65,3 +65,30 @@ jaly-erp/
 
 \
 
+
+
+B) Install backend packages
+Go to your backend folder and run:
+
+cd backend
+
+# Install core backend tools
+npm install express pg dotenv bcrypt jsonwebtoken cors
+
+# Install dev tool for auto restart
+npm install -D nodemon
+
+C) Create basic backend files
+Inside backend/, make:
+
+pgsql
+Copy
+Edit
+backend/
+  package.json
+  server.js      ← entry point
+  db.js          ← database connection
+  .env           ← secrets (DB & JWT)
+
+# Install dev tool for auto restart
+npm install -D nodemon
