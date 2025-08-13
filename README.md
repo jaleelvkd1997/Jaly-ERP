@@ -111,9 +111,26 @@ terminla 2
 cd jaly-erp/frontend
 npm start
 
+frontend/
+│
+├── public/                 # Static assets (favicon, index.html, logos)
+│
+├── src/
+│   ├── assets/              # Images, icons, styles
+│   ├── components/          # Reusable UI parts (Navbar, Sidebar, Button, Table)
+│   ├── pages/               # Full pages (Dashboard, Products, Orders, Customers, Payments, Login)
+│   ├── services/            # API calls to backend (axios setup, API functions)
+│   ├── context/             # AuthContext, global state
+│   ├── hooks/               # Custom React hooks (useAuth, useFetch, etc.)
+│   ├── App.js               # Main app with routes
+│   ├── index.js             # Entry point
+│   ├── App.css              # Global styles
+│   └── routes/              # App route definitions
+│
+├── package.json
+├── package-lock.json
+└── README.md
 
-npm start
-npx nodemon server.js
 
 # Install dev tool for auto restart
 npm install -D nodemon
