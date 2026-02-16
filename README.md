@@ -90,5 +90,47 @@ backend/
   db.js          ← database connection
   .env           ← secrets (DB & JWT)
 
+
+cd jaly-erp
+
+npx create-react-app frontend
+cd frontend
+npm install axios react-router-dom
+Create frontend/.env:
+Create frontend/src/api/axios.js:
+Create frontend/src/context/AuthContext.jsx:
+Create frontend/src/components/ProtectedRoute.jsx:
+Replace frontend/src/App.jsx with:
+Replace frontend/src/index.js with:
+reate frontend/src/pages/Login.jsx:
+Create frontend/src/pages/Products.jsx:
+terminal 1
+cd jaly-erp/backend
+npx nodemon server.js
+terminla 2
+cd jaly-erp/frontend
+npm start
+
+frontend/
+│
+├── public/                 # Static assets (favicon, index.html, logos)
+│
+├── src/
+│   ├── assets/              # Images, icons, styles
+│   ├── components/          # Reusable UI parts (Navbar, Sidebar, Button, Table)
+│   ├── pages/               # Full pages (Dashboard, Products, Orders, Customers, Payments, Login)
+│   ├── services/            # API calls to backend (axios setup, API functions)
+│   ├── context/             # AuthContext, global state
+│   ├── hooks/               # Custom React hooks (useAuth, useFetch, etc.)
+│   ├── App.js               # Main app with routes
+│   ├── index.js             # Entry point
+│   ├── App.css              # Global styles
+│   └── routes/              # App route definitions
+│
+├── package.json
+├── package-lock.json
+└── README.md
+
+
 # Install dev tool for auto restart
 npm install -D nodemon
